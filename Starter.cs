@@ -15,6 +15,7 @@ namespace HomeElectronics
         private Oven _oven;
         private AirConditioner _airConditioner1;
         private AirConditioner _airConditioner2;
+        private CoffeeMachine _coffeeMachine;
 
         public Starter()
         {
@@ -23,6 +24,7 @@ namespace HomeElectronics
             _oven = new Oven() { CompanyName = "Beko", PowerConsumption = 1.65 };
             _airConditioner1 = new AirConditioner() { CompanyName = "COOPER&HUNTER", PowerConsumption = 0.79 };
             _airConditioner2 = new AirConditioner() { CompanyName = "LG", PowerConsumption = 0.81 };
+            _coffeeMachine = new CoffeeMachine() { CompanyName = "Siemens", PowerConsumption = 1.5 };
         }
         public void Run()
         {
