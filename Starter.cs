@@ -10,12 +10,19 @@ namespace HomeElectronics
 {
     public class Starter
     {
-        Refrigerator refrigeratorLG;
-        WashingMachine washMachine;
+        private Refrigerator _RefrigeratorLG;
+        private WashingMachine _washMachine;
+        private Oven _oven;
+        private AirConditioner _airConditioner1;
+        private AirConditioner _airConditioner2;
+
         public Starter()
         {
-            refrigeratorLG = new Refrigerator() { CompanyName = "LG", PowerConsumption = 1 };
-            washMachine = new WashingMachine() { CompanyName = "Indesit", PowerConsumption = 0.786 };
+            _RefrigeratorLG = new Refrigerator() { CompanyName = "LG", PowerConsumption = 0.242 };
+            _washMachine = new WashingMachine() { CompanyName = "Indesit", PowerConsumption = 0.786, LoadType = "horizontal" };
+            _oven = new Oven() { CompanyName = "Beko", PowerConsumption = 1.65 };
+            _airConditioner1 = new AirConditioner() { CompanyName = "COOPER&HUNTER", PowerConsumption = 0.79 };
+            _airConditioner2 = new AirConditioner() { CompanyName = "LG", PowerConsumption = 0.81 };
         }
         public void Run()
         {

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace HomeElectronics.Models
 {
-    public abstract class OvenBuiltIn : OvenType
+    public abstract class AirConditionerCompressor : ClimateType
     {
-        public bool IsElectric { get; set; } = true;
+        public string EngineType { get; set; } = "invertor";
     }
 }

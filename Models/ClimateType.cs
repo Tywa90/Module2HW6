@@ -7,8 +7,8 @@ using System.Threading.Tasks;
 
 namespace HomeElectronics.Models
 {
-    public abstract class OvenType : BigElectronics
+    public abstract class ClimateType : BigElectronics
     {
-        public override TypeOfElectronics Type { get; set; } = TypeOfElectronics.Oven;
+        public override TypeOfElectronics Type { get; set; } = TypeOfElectronics.Climate;
     }
 }

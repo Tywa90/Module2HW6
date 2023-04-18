@@ -10,6 +10,8 @@ namespace HomeElectronics.Services
     {
             Refrigerator,
             WashingMashine,
-            Info,
+            Oven,
+            Climate,
+            CoffeeMachine,
     }
 }
