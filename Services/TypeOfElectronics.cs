@@ -13,5 +13,6 @@ namespace HomeElectronics.Services
             Oven,
             Climate,
             CoffeeMachine,
+            Teapot
     }
 }

@@ -7,8 +7,8 @@ using HomeElectronics.Services;
 
 namespace HomeElectronics.Models
 {
-    public abstract class RefrigratorType : BigElectronics
+    public abstract class TeapotType : SmallElectronics
     {
-        public override TypeOfElectronics Type { get; set; } = TypeOfElectronics.Refrigerator;
+        public override TypeOfElectronics Type { get; set; } = TypeOfElectronics.Teapot;
     }
 }
