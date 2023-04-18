@@ -10,17 +10,15 @@ namespace HomeElectronics
 {
     public class Starter
     {
-        public static void Run()
+        Refrigerator refrigeratorLG;
+        WashingMachine washMachine;
+        public Starter()
         {
-            IElectronics[] home = new IElectronics[10];
-
-            Refrigerator refrLG = new Refrigerator()
-            {
-                PowerConsumption = 70
-            };
-
-            Refrigerator refrBeko = new Refrigerator();
-            home[0] = refrLG;
+            refrigeratorLG = new Refrigerator() { CompanyName = "LG", PowerConsumption = 1 };
+            washMachine = new WashingMachine() { CompanyName = "Indesit", PowerConsumption = 0.786 };
+        }
+        public void Run()
+        {
             Console.WriteLine();
         }
     }

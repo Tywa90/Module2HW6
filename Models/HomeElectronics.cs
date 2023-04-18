@@ -10,10 +10,8 @@ namespace HomeElectronics.Models
     public abstract class HomeElectronics : IElectronics
     {
         public abstract string Name { get; set; }
-        public virtual TypeOfElectronics Type {
-            get => throw new Exception("NotImplement GET PowerConsumption");
-            set => throw new Exception("NotImplement SET PowerConsumption");
-        }
-        public abstract int PowerConsumption { get; set; }
+        public abstract TypeOfElectronics Type { get; set; }
+        public abstract double PowerConsumption { get; set; }
+        public abstract string CompanyName { get; set; }
     }
 }

@@ -4,7 +4,8 @@
     {
         static void Main(string[] args)
         {
-            Starter.Run();
+            Starter start = new Starter();
+            start.Run();
         }
     }
 }

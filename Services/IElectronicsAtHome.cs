@@ -10,6 +10,6 @@ namespace HomeElectronics.Services
     {
         public abstract string Name { get; set; }
         public abstract TypeOfElectronics Type { get; set; }
-        public abstract int PowerConsumption { get; set; }
+        public abstract double PowerConsumption { get; set; }
     }
 }
