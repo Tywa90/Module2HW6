@@ -22,6 +22,7 @@ namespace HomeElectronics.Services
         public void Transfer()
         {
             ChooseDevice();
+            TurnOnDeviceShow();
         }
 
         public void ChooseDevice()
@@ -68,12 +69,18 @@ namespace HomeElectronics.Services
                         Console.WriteLine("Не удалось распознать число, попробуйте еще раз.");
                     }
                 }
-
+                Console.WriteLine("Остановиться - нажмите S");
+                Console.WriteLine("Хотите ещё включить приборы - нажмите любую другую клавишу");
+                string? answer = Console.ReadLine();
+                if (!String.IsNullOrEmpty(answer) && answer.Equals("s", StringComparison.InvariantCultureIgnoreCase))
+                {
+                    break;
+                }
             }
 
         }
 
-        public void TurnOnDevice(IElectronics device)
+        private void TurnOnDevice(IElectronics device)
         {
             Console.WriteLine($"Устройство {device.Name} включено");
             _turnOnLength++;
@@ -84,6 +91,23 @@ namespace HomeElectronics.Services
                 _turnOnDevices[i] = device;
                 _turnOnCounter++;
             }
+        }
+
+        private void TurnOnDeviceShow()
+        {
+            Console.WriteLine("Приборы включенные в розетку: ");
+            foreach (var item in _turnOnDevices)
+            {
+                Console.WriteLine(item.Name.PadRight(17) + item.PowerConsumption + "kw");
+            }
+
+            double powerSum = 0;
+            for (int i = 0; i < _turnOnDevices.Length; i++)
+            {
+                powerSum += _turnOnDevices[i].PowerConsumption;
+            }
+        
+            Console.WriteLine($"Общая мощность включенных приборов: {Math.Round(powerSum, 3)} kw");
         }
     }
 }
