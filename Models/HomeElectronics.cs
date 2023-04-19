@@ -7,11 +7,16 @@ using System.Threading.Tasks;
 
 namespace HomeElectronics.Models
 {
-    public abstract class HomeElectronics : IElectronics
+    public abstract class HomeElectronics : IElectronics, IComparable
     {
         public abstract string Name { get; set; }
         public abstract TypeOfElectronics Type { get; set; }
         public abstract double PowerConsumption { get; set; }
         public abstract string CompanyName { get; set; }
+
+        public int CompareTo(object? obj)
+        {
+            return PowerConsumption.CompareTo(((HomeElectronics)obj).PowerConsumption);
+        }
     }
 }
