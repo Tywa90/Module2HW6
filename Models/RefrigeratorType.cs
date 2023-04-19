@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HomeElectronics.Services;
 
 namespace HomeElectronics.Models
 {
-    public abstract class RefrigratorType : BigElectronics
+    public abstract class RefrigeratorType : BigElectronics
     {
-        public override string TypeOfElectronics { get; set; } = "Refrigerators";
-        public bool IsRefregerated { get; set; } = true;
+        public override TypeOfElectronics Type { get; set; } = TypeOfElectronics.Refrigerator;
     }
 }

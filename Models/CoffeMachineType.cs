@@ -7,8 +7,8 @@ using HomeElectronics.Services;
 
 namespace HomeElectronics.Models
 {
-    public abstract class BigElectronics : HomeElectronics, ICategory
+    public abstract class CoffeMachineType : SmallElectronics
     {
-        public bool IsBig { get; set; } = true;
+        public override TypeOfElectronics Type { get; set; } = TypeOfElectronics.CoffeeMachine;
     }
 }

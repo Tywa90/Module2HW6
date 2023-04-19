@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace HomeElectronics.Models
 {
-    public class Refrigerator : NoFrostTech
+    public class WashingMachine : WMLoadType
     {
-        public override string Name { get; set; } = "Refrigerator";
+        public override string Name { get; set; } = "Washing Machine";
         public override double PowerConsumption { get; set; }
         public override string CompanyName { get; set; }
     }

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace HomeElectronics.Models
 {
-    public abstract class NoFrostTech : RefrigeratorType
+    public abstract class TeapotElectric : TeapotType
     {
-        public bool IsNoFrost { get; set; } = true;
+        public bool IsElectric { get; set; } = true;
     }
 }

@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace HomeElectronics.Models
 {
-    public class Refrigerator : NoFrostTech
+    public class Teapot : TeapotElectric
     {
-        public override string Name { get; set; } = "Refrigerator";
+        public override string Name { get; set; } = "Teapot";
         public override double PowerConsumption { get; set; }
         public override string CompanyName { get; set; }
     }

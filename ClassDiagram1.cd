@@ -1,2 +1,217 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram /> 
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="HomeElectronics.Program" Collapsed="true">
+    <Position X="14.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Program.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Starter" Collapsed="true">
+    <Position X="16" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAEAAAAAAAAAAAAAABAAAAAAAIAIQBEAI=</HashCode>
+      <FileName>Starter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Models.AirConditioner" Collapsed="true">
+    <Position X="5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAABAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\AirConditioner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Models.BigElectronics" Collapsed="true">
+    <Position X="8.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\BigElectronics.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HomeElectronics.Models.AirConditionerCompressor" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\ClimateEngineType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Models.ClimateType" Collapsed="true">
+    <Position X="5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Models\ClimateType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Models.CoffeeMachine" Collapsed="true">
+    <Position X="0.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAABAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\CoffeeMachine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Models.CoffeGrinder" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\CoffeGrinder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Models.CoffeMachineType" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Models\CoffeMachineType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Models.HomeElectronics" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAQAAABAAAQAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Models\HomeElectronics.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HomeElectronics.Models.NoFrostTech" Collapsed="true">
+    <Position X="11.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\NoFrostTech.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Models.Oven" Collapsed="true">
+    <Position X="7.25" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAABAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Oven.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Models.OvenBuiltIn" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\OvenBuiltIn.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Models.OvenType" Collapsed="true">
+    <Position X="7.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Models\OvenType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Models.Refrigerator" Collapsed="true">
+    <Position X="11.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAABAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Refrigerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Models.RefrigratorType" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Models\RefrigeratorType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Models.SmallElectronics" Collapsed="true">
+    <Position X="1.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\SmallElectronics.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="HomeElectronics.Models.Teapot" Collapsed="true">
+    <Position X="2.75" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAABAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\Teapot.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Models.TeapotElectric" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TeapotElectric.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Models.TeapotType" Collapsed="true">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Models\TeapotType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Models.WashingMachine" Collapsed="true">
+    <Position X="9.5" Y="6.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAABAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\WashingMachine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Models.WashingMachines" Collapsed="true">
+    <Position X="9.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Models\WashingMachines.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Models.WMLoadType" Collapsed="true">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\WMLoadType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Services.HelpServices" Collapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAKAgAAQAIAAAAEAAAgAAAAgAAAAAAAAAACAAAA=</HashCode>
+      <FileName>Services\HelpServices.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Services.HomeItems" Collapsed="true">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\HomeItems.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Services.HomeItemsExtension" Collapsed="true">
+    <Position X="17.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Services\HomeItemsExtension.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="HomeElectronics.Services.UserInput" Collapsed="true">
+    <Position X="17.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAAAAAACAAQAAAEQCEAAAAAACAAAAAAACAAAA=</HashCode>
+      <FileName>Services\UserInput.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="HomeElectronics.Services.ICategory" Collapsed="true">
+    <Position X="14.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\ICategory.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="HomeElectronics.Services.IElectronics" Collapsed="true">
+    <Position X="16" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABAAAQAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>Services\IElectronics.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="HomeElectronics.Services.TypeOfElectronics" Collapsed="true">
+    <Position X="14.25" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAACAAAAAAAAAAIAAAEIAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Services\TypeOfElectronics.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

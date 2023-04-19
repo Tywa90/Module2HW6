@@ -1,21 +1,57 @@
-﻿using HomeElectronics.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HomeElectronics.Models;
+using HomeElectronics.Services;
 
 namespace HomeElectronics
 {
     public class Starter
     {
-        public static void Run()
+        private HelpServices _helpServices = new HelpServices();
+        private AirConditioner _airConditioner1;
+        private AirConditioner _airConditioner2;
+        private Refrigerator _refrigeratorLG;
+        private WashingMachine _washMachine;
+        private Oven _oven;
+        private CoffeeMachine _coffeeMachine;
+        private Teapot _teapot;
+
+        public Starter()
         {
-            Refrigerator refrLG = new Refrigerator()
-            {
-                PowerConsumption = 70
-            };
-            Console.WriteLine();
+            _airConditioner1 = new AirConditioner() { CompanyName = "COOPER&HUNTER", PowerConsumption = 0.79 };
+            _airConditioner2 = new AirConditioner() { CompanyName = "LG", PowerConsumption = 0.81 };
+            _refrigeratorLG = new Refrigerator() { CompanyName = "LG", PowerConsumption = 0.242 };
+            _washMachine = new WashingMachine() { CompanyName = "Indesit", PowerConsumption = 0.786, LoadType = "horizontal" };
+            _oven = new Oven() { CompanyName = "Beko", PowerConsumption = 1.65 };
+            _coffeeMachine = new CoffeeMachine() { CompanyName = "Siemens", PowerConsumption = 1.5 };
+            _teapot = new Teapot() { CompanyName = "Philips", PowerConsumption = 2.2 };
+        }
+
+        public void Run()
+        {
+            AddElectronics();
+
+            _helpServices.DisplayElectronicsAtHome();
+            _helpServices.DisplayQuantity();
+            _helpServices.DisplaySort();
+            _helpServices.FindUnitByName("teapot");
+
+            UserInput userInput = new UserInput(_helpServices.Electronics);
+            userInput.Transfer();
+        }
+
+        public void AddElectronics()
+        {
+            _helpServices.Add(_airConditioner1);
+            _helpServices.Add(_airConditioner2);
+            _helpServices.Add(_refrigeratorLG);
+            _helpServices.Add(_washMachine);
+            _helpServices.Add(_oven);
+            _helpServices.Add(_coffeeMachine);
+            _helpServices.Add(_teapot);
         }
     }
 }
