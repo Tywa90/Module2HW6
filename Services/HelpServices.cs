@@ -8,20 +8,36 @@ namespace HomeElectronics.Services
 {
     public class HelpServices
     {
-        private IElectronics[] _electronics = new IElectronics[1];
-        private int _electronicsTotal = 0;
+        private IElectronics[] _electronics;
+        private int _electronicsLength = 0;
         private int _electronicsCounter = 0;
+
+        public IElectronics[] Electronics { get { return _electronics; } set { _electronics = value; } }
+        public int ElectronicsCounter { get; set; }
+
+        public HelpServices()
+        {
+            Electronics = new IElectronics[1];
+        }
+
         public void Add(IElectronics electronicsUnit)
         {
-            _electronicsTotal++;
-            Array.Resize(ref _electronics, _electronicsTotal);
+            _electronicsLength++;
+            Array.Resize(ref _electronics, _electronicsLength);
 
-            for (var i = _electronicsCounter; i < _electronicsTotal; i++)
+            for (var i = _electronicsCounter; i < _electronicsLength; i++)
             {
                 _electronics[i] = electronicsUnit;
                 _electronicsCounter++;
             }
+        }
 
+        public void FindUnitByName(string name)
+        {
+            HomeItems items = new HomeItems();
+            items.Electronics = _electronics;
+            var res = items.Electronics.FindByName(name);
+            Console.WriteLine($"I found this item: {res.Name}");
         }
 
         public void DisplayElectronicsAtHome()
@@ -36,18 +52,18 @@ namespace HomeElectronics.Services
         {
             foreach (var item in _electronics)
             {
-                Console.WriteLine(item.Name + "\t" + item.PowerConsumption);
+                Console.WriteLine(item.Name.PadRight(17) + item.PowerConsumption+ "kw");
             }
         }
 
         public void DisplayQuantity()
         {
-            Console.WriteLine($"The total quantity electronics at home: {_electronicsCounter}");
+            Console.WriteLine($"Total quantity electronics at home: {_electronicsCounter}");
         }
 
         public void DisplaySort()
         {
-            Console.WriteLine("Sort by Power Consumption from");
+            Console.WriteLine("Sort by Power Consumption from MAX to MIN");
             Array.Sort(_electronics);
             Array.Reverse(_electronics);
             DisplayWithPower();

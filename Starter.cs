@@ -32,9 +32,14 @@ namespace HomeElectronics
         public void Run()
         {
             AddElectronics();
+
             _helpServices.DisplayElectronicsAtHome();
             _helpServices.DisplayQuantity();
             _helpServices.DisplaySort();
+            _helpServices.FindUnitByName("teapot");
+
+            UserInput userInput = new UserInput(_helpServices.Electronics);
+            userInput.Transfer();
         }
 
         public void AddElectronics()
