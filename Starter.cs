@@ -1,15 +1,16 @@
-﻿using HomeElectronics.Models;
-using HomeElectronics.Services;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using HomeElectronics.Models;
+using HomeElectronics.Services;
 
 namespace HomeElectronics
 {
     public class Starter
     {
+        private HelpServices _helpServices = new HelpServices();
         private AirConditioner _airConditioner1;
         private AirConditioner _airConditioner2;
         private Refrigerator _refrigeratorLG;
@@ -17,7 +18,6 @@ namespace HomeElectronics
         private Oven _oven;
         private CoffeeMachine _coffeeMachine;
         private Teapot _teapot;
-        HelpServices _helpServices = new HelpServices();
 
         public Starter()
         {
@@ -29,6 +29,7 @@ namespace HomeElectronics
             _coffeeMachine = new CoffeeMachine() { CompanyName = "Siemens", PowerConsumption = 1.5 };
             _teapot = new Teapot() { CompanyName = "Philips", PowerConsumption = 2.2 };
         }
+
         public void Run()
         {
             AddElectronics();

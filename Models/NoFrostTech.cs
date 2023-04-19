@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace HomeElectronics.Models
 {
-    public abstract class NoFrostTech : RefrigratorType
+    public abstract class NoFrostTech : RefrigeratorType
     {
         public bool IsNoFrost { get; set; } = true;
     }

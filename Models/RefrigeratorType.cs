@@ -7,7 +7,7 @@ using HomeElectronics.Services;
 
 namespace HomeElectronics.Models
 {
-    public abstract class RefrigratorType : BigElectronics
+    public abstract class RefrigeratorType : BigElectronics
     {
         public override TypeOfElectronics Type { get; set; } = TypeOfElectronics.Refrigerator;
     }

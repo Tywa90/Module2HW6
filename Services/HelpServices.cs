@@ -12,12 +12,15 @@ namespace HomeElectronics.Services
         private int _electronicsLength = 0;
         private int _electronicsCounter = 0;
 
-        public IElectronics[] Electronics { get { return _electronics; } set { _electronics = value; } }
-        public int ElectronicsCounter { get; set; }
-
         public HelpServices()
         {
             Electronics = new IElectronics[1];
+        }
+
+        public IElectronics[] Electronics
+        {
+            get { return _electronics; }
+            set { _electronics = value; }
         }
 
         public void Add(IElectronics electronicsUnit)
@@ -52,7 +55,7 @@ namespace HomeElectronics.Services
         {
             foreach (var item in _electronics)
             {
-                Console.WriteLine(item.Name.PadRight(17) + item.PowerConsumption+ "kw");
+                Console.WriteLine(item.Name.PadRight(17) + item.PowerConsumption + "kw");
             }
         }
 

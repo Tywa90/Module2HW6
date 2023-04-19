@@ -25,18 +25,18 @@ namespace HomeElectronics.Services
             TurnOnDeviceShow();
         }
 
-        public void ChooseDevice()
+        private void ChooseDevice()
         {
             while (_electronics.Length > 0)
             {
-                    Console.WriteLine("Выберите устройства, которые хотите включить:");
-                    int j = 1;
-                    foreach (var item in _electronics)
-                    {
-                        Console.WriteLine($"{j}. {item.Name.PadRight(17)}{item.PowerConsumption}kw");
-                        j++;
-                    }
-                
+                Console.WriteLine("Выберите устройства, которые хотите включить:");
+                int j = 1;
+                foreach (var item in _electronics)
+                {
+                    Console.WriteLine($"{j}. {item.Name.PadRight(17)}{item.PowerConsumption}kw");
+                    j++;
+                }
+
                 while (true)
                 {
                     string? text = Console.ReadLine();
@@ -45,7 +45,7 @@ namespace HomeElectronics.Services
                         if (number > 0 && number <= _electronics.Length)
                         {
                             TurnOnDevice(_electronics[number - 1]);
-                            
+
                             temp = new IElectronics[_electronics.Length];
                             for (int k = 0; k < _electronics.Length; k++)
                             {
@@ -58,6 +58,7 @@ namespace HomeElectronics.Services
                                     temp[k] = _electronics[k];
                                 }
                             }
+
                             _electronics = temp;
                             Array.Sort(_electronics);
                             Array.Reverse(_electronics);
@@ -69,15 +70,15 @@ namespace HomeElectronics.Services
                         Console.WriteLine("Не удалось распознать число, попробуйте еще раз.");
                     }
                 }
+
                 Console.WriteLine("Остановиться - нажмите S");
                 Console.WriteLine("Хотите ещё включить приборы - нажмите любую другую клавишу");
                 string? answer = Console.ReadLine();
-                if (!String.IsNullOrEmpty(answer) && answer.Equals("s", StringComparison.InvariantCultureIgnoreCase))
+                if (!string.IsNullOrEmpty(answer) && answer.Equals("s", StringComparison.InvariantCultureIgnoreCase))
                 {
                     break;
                 }
             }
-
         }
 
         private void TurnOnDevice(IElectronics device)
@@ -106,7 +107,7 @@ namespace HomeElectronics.Services
             {
                 powerSum += _turnOnDevices[i].PowerConsumption;
             }
-        
+
             Console.WriteLine($"Общая мощность включенных приборов: {Math.Round(powerSum, 3)} kw");
         }
     }
